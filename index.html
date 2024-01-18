@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//dowhile
+let T = Number(prompt ("masukan tahun yang akan di validasi"))
+
+do {
+if (T% 4 != 0){
+hasil = "bukan tahun kabisat"
+}else if ( T % 100 != 0){
+hasil = " tahun kabisat"
+}else if ( T % 400 == 0){
+hasil = "tahun kabisat"
+} else {
+hasil = "bukan tahun kabisat"
+}
+console.log ( T + hasil)
+T += 4
+} while (T <= 2023 )
+
+// for
+let Y;
+
+for (Y = Number(prompt("Masukkan tahun yang akan divalidasi")); Y <= 2023; Y += 4) {
+    let hasil;
+
+    if (Y % 4 !== 0) {
+        hasil = "bukan tahun kabisat"
+    } else if (Y % 100 !== 0) {
+        hasil = "tahun kabisat"
+    } else if (Y % 400 === 0) {
+        hasil = "tahun kabisat"
+    } else {
+        hasil = "bukan tahun kabisat"
+    }
+
+    console.log(Y + " " + hasil);
+}
+// while
+let J = Number(prompt("Masukkan tahun yang akan divalidasi"));
+
+while (J <= 2023) {
+    let hasil
+    if (J % 4 !== 0) {
+        hasil = "bukan tahun kabisat"
+    } else if (J % 100 !== 0) {
+        hasil = "tahun kabisat"
+    } else if (J % 400 === 0) {
+        hasil = "tahun kabisat"
+    } else {
+        hasil = "bukan tahun kabisat"
+    }
+
+    console.log(J + " " + hasil)
+
+    J += 4
+}
+
+    </script>
+</body>
+</html>
